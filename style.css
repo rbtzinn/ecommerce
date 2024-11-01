@@ -347,3 +347,73 @@ button:hover {
 .container-dest {
     margin-left: 500px; /* ajusta para alinhar com a largura da promo-grid */
 }
+
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav form {
+        flex-grow: 1;
+    }
+
+    .promo-grid {
+        display: none;
+    }
+
+    .container,
+    .container-dest {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a img {
+        max-width: 50px;
+    }
+
+    nav form input[type="text"] {
+        width: 100%;
+    }
+
+    nav form button {
+        width: auto;
+    }
+
+    .login-container,
+    .register-container {
+        margin: 50px auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 60px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .product-grid {
+        gap: 10px;
+    }
+
+    .promo-grid {
+        display: none;
+    }
+}
