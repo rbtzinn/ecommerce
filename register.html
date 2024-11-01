@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="./images/logo.png" alt="Logo da Loja"></a>
+        <ul>
+            <li><a href="#roupas">Roupas</a></li>
+            <li><a href="#eletronicos">Eletrônicos</a></li>
+            <li><a href="#calcados">Calçados</a></li>
+            <li><a href="#acessorios">Acessórios</a></li>
+            <li><a href="#promocoes">Ofertas</a></li>
+        </ul>
+    </nav>
+
+    <div class="register-container">
+        <h1>Cadastrar</h1>
+        <form id="registerForm" action="/register" method="POST" onsubmit="return validatePasswords()">
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required oninput="checkPasswordCriteria()">
+                <span id="senha-validacao" class="validacao"></span>
+                <ul id="criterios" class="validacao-criterios">
+                    <li id="minimo-caracteres" class="invalid">Pelo menos 8 caracteres</li>
+                    <li id="maiuscula" class="invalid">Uma letra maiúscula</li>
+                    <li id="minuscula" class="invalid">Uma letra minúscula</li>
+                    <li id="numero" class="invalid">Um número</li>
+                    <li id="caractere-especial" class="invalid">Um caractere especial</li>
+                </ul>
+            </div>
+            <div class="input-group">
+                <label for="confirmar-senha">Confirmar Senha</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" required oninput="checkPasswordMatch()">
+                <span id="confirmar-senha-validacao" class="validacao"></span>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p class="redirect">Já tem uma conta? <a href="login.html">Entrar</a></p>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

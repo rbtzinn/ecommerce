@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="./images/logo.png" alt="Logo da Loja"></a>
+        <ul>
+            <li><a href="#roupas">Roupas</a></li>
+            <li><a href="#eletronicos">Eletrônicos</a></li>
+            <li><a href="#calcados">Calçados</a></li>
+            <li><a href="#acessorios">Acessórios</a></li>
+            <li><a href="#promocoes">Ofertas</a></li>
+        </ul>
+        <form action="/search" method="GET">
+            <input type="text" placeholder="Buscar produtos..." name="q">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <a href="favoritos.html" id="Fav">
+            <i class="fas fa-heart"></i> Favoritos
+        </a>
+        <a href="carrinho.html" id="carrinho">
+            <i class="fas fa-shopping-cart"></i> Carrinho (0)
+        </a>
+        <a href="login.html" id="login">
+            <i class="fas fa-user"></i> Entrar / Cadastrar
+        </a>
+    </nav>
+    <div class="container container-dest">
+        <h1 class="dest">Destaques</h1>
+        <div class="product-grid">
+            <div class="product">
+                <img src="./images/produto1.jpg" alt="Produto 1">
+                <h2>Produto 1</h2>
+                <p>Descrição do Produto 1</p>
+            </div>
+            <div class="product">
+                <img src="./images/produto2.jpg" alt="Produto 2">
+                <h2>Produto 2</h2>
+                <p>Descrição do Produto 2</p>
+            </div>
+            <div class="product">
+                <img src="./images/produto3.jpg" alt="Produto 3">
+                <h2>Produto 3</h2>
+                <p>Descrição do Produto 3</p>
+            </div>
+            <div class="product">
+                <img src="./images/produto4.jpg" alt="Produto 4">
+                <h2>Produto 4</h2>
+                <p>Descrição do Produto 4</p>
+            </div>
+            <div class="product">
+                <img src="./images/produto5.jpg" alt="Produto 5">
+                <h2>Produto 5</h2>
+                <p>Descrição do Produto 5</p>
+            </div>
+            <div class="product">
+                <img src="./images/produto6.jpg" alt="Produto 6">
+                <h2>Produto 6</h2>
+                <p>Descrição do Produto 6</p>
+            </div>
+            <div class="product">
+                <img src="./images/produto6.jpg" alt="Produto 6">
+                <h2>Produto 6</h2>
+                <p>Descrição do Produto 6</p>
+            </div>
+            <div class="product">
+                <img src="./images/produto6.jpg" alt="Produto 6">
+                <h2>Produto 6</h2>
+                <p>Descrição do Produto 6</p>
+            </div>
+            <div class="product">
+                <img src="./images/produto6.jpg" alt="Produto 6">
+                <h2>Produto 6</h2>
+                <p>Descrição do Produto 6</p>
+            </div>
+        </div>
+    </div>
+    <div class="promo-grid">
+        <h2>Promoções</h2>
+        <div class="promo-item">
+            <img src="./images/produto6.jpg" alt="Promoção 1">
+            <p>Descrição da Promoção 1</p>
+        </div>
+        <div class="promo-item">
+            <img src="./images/produto6.jpg" alt="Promoção 2">
+            <p>Descrição da Promoção 2</p>
+        </div>
+        <div class="promo-item">
+            <img src="./images/produto6.jpg" alt="Promoção 3">
+            <p>Descrição da Promoção 3</p>
+        </div>
+        <div class="promo-item">
+            <img src="./images/produto6.jpg" alt="Promoção 3">
+            <p>Descrição da Promoção 3</p>
+        </div>
+        <div class="promo-item promo-last-item">
+            <img src="./images/produto6.jpg" alt="Promoção 3">
+            <p>Descrição da Promoção 3</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
