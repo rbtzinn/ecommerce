@@ -1,5 +1,5 @@
 # Ignorar node_modules
 node_modules/
 
-# Não ignorar ícones dentro de node_modules
+# Não ignorar a pasta bootstrap-icons dentro de node_modules
 !node_modules/bootstrap-icons/
