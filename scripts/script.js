@@ -48,3 +48,4 @@ toggleSwitch.addEventListener('change', function() {
         body.classList.remove('dark-mode');  // Desativa o modo escuro
     }
 });
+

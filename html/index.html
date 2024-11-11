@@ -16,9 +16,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary mb-2">
-        <a class="navbar-brand" href="#"><img src="../images/logo.jpg" alt=""></a>
-        <label for="dark-mode-toggle">Modo Escuro</label>
-        <input type="checkbox" id="dark-mode-toggle">
+        <a class="navbar-brand" href="#"><img src="../images/logo.png" alt=""></a>
         <ul class="navbar-nav mb-lg-0 d-flex d-sm-flex flex-row d-lg-none">
             <li class="nav-item me-3">
                 <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
@@ -55,6 +53,13 @@
                         Mais
                     </a>
                     <ul class="dropdown-menu">
+                        <li class="dropdown-item d-flex justify-content-between align-items-center">
+                            <span>Modo Noturno</span>
+                            <label class="switch">
+                                <input type="checkbox" id="dark-mode-toggle">
+                                <span class="slider"></span>
+                            </label>
+                        </li>
                         <li><a class="dropdown-item" href="#">Masculino</a></li>
                         <li><a class="dropdown-item" href="#">Feminino</a></li>
                     </ul>
@@ -211,6 +216,7 @@
     </div>
     </div>
 
+    
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../scripts/script.js"></script>
 </body>
