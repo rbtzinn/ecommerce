@@ -4,35 +4,34 @@
     padding: 0;
 }
 
-/* Estilo do modo claro (padrão) */
-/* Estilo do modo claro (padrão) */
 body {
     background-color: white;
     color: black;
 }
 
-/* Estilo do modo escuro */
 body.dark-mode {
-    background-color: #121212;  /* Cor de fundo escura */
-    color: #ffffff;  /* Cor de texto clara */
+    background-color: #121212;
+    color: #ffffff;
 }
 
-/* Personalize outros elementos para o modo escuro */
 body.dark-mode header {
-    background-color: #1e1e1e;  /* Cor de fundo escura para o cabeçalho */
+    background-color: #1e1e1e;
 }
 
-/* Navegação (nav) */
 body.dark-mode nav {
-    background-color: #333 !important;  /* Fundo mais escuro para a barra de navegação */
+    background-color: #333 !important;
 }
 
 body.dark-mode nav a {
-    color: #ffffff;  /* Cor dos links na navegação */
+    color: #ffffff;
+}
+
+body.dark-mode .navbar-toggler {
+    color: #ffffff;
 }
 
 body.dark-mode nav a:hover {
-    color: #cccccc;  /* Cor do link ao passar o mouse */
+    color: #cccccc;
 }
 
 body.dark-mode .dropdown-menu {
@@ -40,31 +39,28 @@ body.dark-mode .dropdown-menu {
     background-color: #333;
 }
 
-body.dark-mode .dropdown-menu span{
+body.dark-mode .dropdown-menu span {
     color: #ffffff;
 }
 
-/* Container de Destaques (container-dest) */
 body.dark-mode .container-dest {
-    background-color: #333;  /* Fundo escuro */
-    color: #ffffff;  /* Cor do texto clara */
-    border: 1px solid #555;  /* Cor mais escura para a borda */
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
 }
 
 body.dark-mode .container-dest a {
-    color: #ffffff;  /* Cor dos links na container-dest */
+    color: #ffffff;
 }
 
 body.dark-mode .container-dest a:hover {
-    color: #cccccc;  /* Cor do link ao passar o mouse */
+    color: #cccccc;
 }
 
-/* Adiciona sombras e outras personalizações se necessário */
 body.dark-mode .container-dest .row {
-    color: #ffffff;  /* Garante que o texto dentro da container-dest tenha cor clara */
+    color: #ffffff;
 }
 
-/* Estilo do Switch */
 .switch {
     position: relative;
     display: inline-block;
@@ -111,7 +107,6 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(25px);
 }
-
 
 .container-carousel {
     margin-bottom: 10px;
