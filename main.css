@@ -121,6 +121,10 @@ nav a img {
     border-radius: 5px;
 }
 
+#usuario-nome{
+    margin-left: 3px;
+}
+
 .container-dest {
     max-width: 1200px;
     margin: 0 auto;
