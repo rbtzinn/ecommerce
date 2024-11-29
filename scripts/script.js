@@ -85,7 +85,7 @@ if (botaoSair) {
     botaoSair.addEventListener('click', function () {
         localStorage.removeItem('usuarioNome');
         atualizarInterfaceUsuario(null);
-        window.location.href = '../index.html';
+        window.location.href = './index.html';
     });
 }
 
